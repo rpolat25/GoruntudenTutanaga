@@ -344,7 +344,7 @@ class AnnotationWindow(tk.Toplevel):
         self.arrow_id = None
         self.arrow_end = None
         
-        self.text_entry = None
+        self.text_entry = None  # Initialize text_entry to None
         
         self.canvas.bind("<ButtonPress-1>", self.on_button_press)
         self.canvas.bind("<B1-Motion>", self.on_mouse_drag)
@@ -389,7 +389,8 @@ class AnnotationWindow(tk.Toplevel):
     def prompt_for_text(self, x, y):
         if self.text_entry:
             self.text_entry.destroy()
-        # Canvas üzerinde (x, y) koordinatında Entry widget'ı oluştur.
+        self.text_entry = tk.Entry(self)  # Properly initialize text_entry
+        self.text_entry.place(x=x, y=y)  # Place the Entry widget at the specified coordinates
         self.text_entry.focus_set()
         self.text_entry.bind("<Return>", self.on_text_entered)
         self.text_entry.bind("<Escape>", self.cancel_text_entry)
