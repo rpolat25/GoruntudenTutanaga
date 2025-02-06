@@ -137,7 +137,7 @@ class VideoAnnotationApp(tk.Tk):
             self.is_playing = True
             self.update_time()
         else:
-            messagebox.showwarning("Uyarı", "Lütfen önce bir video dosyası açın.", **self.messagebox_options)
+            messagebox.showwarning("Uyarı", "Lütfen önce bir video dosyasını açın.", **self.messagebox_options)
 
     def pause_video(self):
         self.player.pause()
