@@ -2,4 +2,4 @@
 Görüntü İzleme ve Tutanak Uygulaması
 
 
-Bu uygulamayı indirip derleyebilirsiniz. Derledikten sonra uygulamayla aynı dizine RPSABLON.docx dosyasını koyarsanız bu sablondan yeni raporlarınızı oluşturabilirsiniz.
+Bu uygulamayı indirip derleyebilirsiniz. Uygulamayla aynı dizinde RPSABLON.docx dosyasını kullanarak yeni raporlarınızı oluşturabilirsiniz.
